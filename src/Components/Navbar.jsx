@@ -18,16 +18,23 @@ const Navbar = () => {
             className="object-cover h-[100px]"
           />
         </div>
-        <navbar className="flex gap-[10px]">
+        <navbar className="lg:!flex xl:!flex gap-[20px] sm:hidden hidden">
           {navbars &&
             navbars.length != 0 &&
             navbars.map((item, i) => {
-              return <Link to={item.route}>{item.title}</Link>;
+              return (
+                <Link to={item.route} className="text-[18px] font-semibold">
+                  {item.title}
+                </Link>
+              );
             })}
         </navbar>
-        <button className="text-[18px] border px-[15px] py-[10px] rounded-[5px] bg-[#b28724] text-white font-medium">
+        <button className=" hidden sm:hidden md:!block text-[18px] border px-[15px] py-[10px] rounded-[5px] bg-[#b28724] text-white font-medium">
           Contact us
         </button>
+        <div className="h-[30px] lg:!hidden">
+          <img src="/menu.png" className="h-full" />
+        </div>
       </div>
     </div>
   );

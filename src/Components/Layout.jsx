@@ -11,8 +11,8 @@ const Layout = () => {
       <Navbar />
       <Home />
       <About />
-      <Product />
-      <Contact />
+      {/* <Product />
+      <Contact /> */}
     </div>
   );
 };
