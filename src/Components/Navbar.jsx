@@ -33,7 +33,7 @@ const Navbar = () => {
           Contact us
         </button>
         <div className="h-[30px] lg:!hidden">
-          <img src="/menu.png" className="h-full" />
+          <img src="/menu.png" className="h-full" alt="menu" />
         </div>
       </div>
     </div>
